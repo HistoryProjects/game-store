@@ -1,0 +1,29 @@
+.container{
+    width: 236.55px;
+}
+
+.product_image{
+    width: 100%;
+    height: 282px;
+    cursor: pointer;
+}
+
+.product_name{
+    margin-top: 8px;
+    color: #A9A9A7;
+    font-weight: 500;
+}
+
+.product_price{
+    color: #EBB110;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.control_wrapper{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

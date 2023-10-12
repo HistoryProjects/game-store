@@ -1,0 +1,53 @@
+/*Стили раздела преимуществ*/
+.edge_list {
+    width: 100%; /*макс ширина контейнера*/
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 60px auto; /*Центрирование с отступом 60px*/
+
+}
+
+.edgeList_item{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.edge-list .edge {
+    flex-basis: calc(33.33% - 20px); /* 3 элемента в ряду с отступами между ними */
+    margin-bottom: 40px; /* Отступ снизу между рядами */
+}
+
+.edge_text{
+    color: white;
+    white-space: pre-line; /* Разрешает перенос строк */
+    /* Максимальная ширина строки до переноса */
+    max-width: 18ch; /* 1ch равен ширине одного символа */
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+    .edgeList_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .edge_list {display: flex}
+  }
+
+@media (max-width: 640px) {
+    .edge_list { padding: 20px }
+}
+  
+@media (max-width: 480px) {
+    .edge_list { 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

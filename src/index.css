@@ -1,13 +1,58 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin-top: 103px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.favorite_icon, .cart_icon{
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.favorite_icon:hover, .cart_icon:hover{
+  color: #EBB110;
+}
+
+
+/*Стили Выпадающего списка жанров "Каталог"*/
+.rs-dropdown-toggle-caret.rs-icon {display: none}
+
+.rs-dropdown-toggle{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rs-dropdown.rs-dropdown-placement-bottom-start{
+  position: relative
+}
+
+.rs-dropdown-menu{
+  position: absolute;
+  margin-top: 20px;
+
+  width: 100%;
+  top: 100%; 
+  left: 0;
+  overflow: hidden;
+  z-index: 20;
+}
+
+
+@media (max-width: 1120px){
+  .rs-dropdown-menu{
+    position: static;
+    max-height: 200px; 
+    overflow-y: auto;
+  }
 }

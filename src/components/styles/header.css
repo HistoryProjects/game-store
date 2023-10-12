@@ -1,0 +1,128 @@
+.header{
+  width: 100%;
+  background-color: #4A362D;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  box-shadow: 0px 2px 12px 2px rgba(46, 44, 44, 0.603);
+}
+
+.h_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 3px #EBB110;
+  padding: 8px 20px 8px 20px;
+}
+
+.h_bottom{
+  width: 100%;
+  padding: 8px 20px 8px 20px;
+ 
+}
+
+.nav{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo{
+  font-family: 'Days One', sans-serif;
+  font-size: 35px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.menu_btn{
+  display: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.menu_btn:hover{
+  color: #EBB110;
+}
+
+.menu{
+  display: flex;
+  width: 80%;
+  gap: 32px;
+  align-items: center;
+  box-shadow: 0px 2px 12px 2px rgba(46, 44, 44, 0.603);
+}
+
+.search_item{
+  width: 70%;
+  display: flex;
+}
+
+.favorite_item, .cart_item{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.favorite_title, .cart_title{
+  display: none;
+}
+
+
+
+@media (max-width: 1170px) {
+  .logo{font-size: 24px}
+}
+
+@media (max-width: 960px) { 
+  .logo{font-size: 18px} 
+}
+
+@media (max-width: 1120px){
+   .menu{
+    background-color:#4A362D;
+
+     padding: 20px;
+
+     position: absolute;
+     left: 0;
+     top: -700px;
+     z-index: 2000;
+
+     display: flex;
+     flex-direction: column;     
+     width: 100%;
+     align-items: start;
+   }
+
+   .menuActive{
+    top: 120px;
+    transition: ease-in-out 1.5s;
+    transition-duration: 1s;
+  }
+
+
+   .search_item{
+     width: 100%;
+   }
+
+   .favorite_item, .cart_item{
+     gap: 20px;
+   }
+
+   .favorite_title, .cart_title{
+     display: block;
+   }
+
+   .genres{ width: 100% }
+
+   .menu_btn{
+     display: block;
+   }
+
+   h_bottom{
+      position: relative;
+   }
+}
+

@@ -1,0 +1,83 @@
+.container{
+    background-color: #453E3E;
+    margin-top: 100px;
+    padding: 40px;
+    width: 100%;
+}
+
+.f_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_bottom{
+    color: #EBB110;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 32px 0 32px 0;
+
+}
+
+.logo{
+    font-family: 'Days One', sans-serif;
+    font-size: 35px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.f_contacts{
+    width: auto;
+}
+
+.f_links{
+    display: flex;
+    justify-content: space-between;
+    width: 58.3%;
+}
+
+@media (max-width: 1170px) {
+    .logo{font-size: 24px}
+}
+  
+@media (max-width: 960px) { 
+    .logo{font-size: 18px} 
+}
+
+@media (max-width: 920px){
+    .f_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .container{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px){
+    .f_top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .f_contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul>li{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .f_links, .f_contacts{
+        width: 100%;
+    }
+}

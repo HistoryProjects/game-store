@@ -1,0 +1,44 @@
+.container{
+    width: 95%;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 240px;
+}
+
+.cart_wrapper{
+    width: 100%;
+    margin: 40px auto;
+    padding-bottom: 56px;
+}
+
+.cart{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.products{
+    width: 75%;
+}
+
+.transaction_info{
+    width: 25%;
+    background-color: #F2E5D8;
+    padding: 20px;
+    max-height: 200px;
+    color: #EBB110;
+    border-radius: 8px;
+}
+
+@media (max-width: 1120px) {
+    .cart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products, .transaction_info{
+        width: 100%;
+    }
+
+}
